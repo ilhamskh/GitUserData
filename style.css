@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root{
+    --primary-color: #082032;
+    --secondary-color: #2C394B;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+}
+
+h3 {
+    color: white;
+}
+
+li {
+    color: #fff;
+}
+
+div{
+    color: #fff;
+}
+
+hr {
+    border: 2px solid var(--secondary-color);
+}
+
+.searchContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0.2px 6px 8px rgba(0,0,0,0.3);
+}
+
+.search:hover {
+    box-shadow: 0.2px 12px 16px rgba(0,0,0,0.3);
+}
+
+#username {
+    background-color: var(--primary-color);
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#username:focus {
+    outline: 0;
+    background-color: var(--primary-color);
+}
+
+#username::placeholder{
+    color: #334756;
+}
+
+.btn{
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #FF4C29;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+    outline: 0;
+    border: none;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.2);
+    display: inline-block;
+}
+.btn:hover{
+    background-color: #de3412;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+#gitUser {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-infos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.user-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-items div {
+    background-color: rgb(59, 59, 255);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.2);
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+#user-contacts {
+    margin-top: 6rem;
+}
+
+#user-contacts li {
+}
+
+.alert {
+    padding: 0.5rem;
+    color: white;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 7px;
+}
+
+#danger {
+    background-color: #f44336; /* Red */
+}
+
+#success {
+    background-color: rgb(1, 176, 1); /* Green */
+}
+
+#repos {
+    display: flex;
+    flex-direction: column;
+}
+#repos h3 {
+    text-align: center;
+}
+
+.repo-info {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    box-shadow: 0.2px 6px 8px rgba(0,0,0,0.3);
+    border-radius: 8px;
+}
+
+.repo-info .repo-name{
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.2);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+}
+
+.repo-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.repo-items div {
+    margin: 0 1rem;
+}
+
+.language {
+    background-color: rgb(255, 111, 0);
+    border-radius: 7px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.2);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.stars {
+    background-color: rgb(0, 108, 202);
+    border-radius: 7px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.2);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.forks {
+    background-color: rgb(0, 197, 85);
+    border-radius: 7px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.2);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+#recentSearches{
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    #profile {
+        align-items: center;
+        justify-content: center;
+    }
+    #gitUser {
+        flex-direction: column;
+    }
+
+    .repo-info {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .repo-items {
+        justify-content: space-between;
+        margin-top: 1.5rem;
+    }
+}
+
+.list-group-item {
+    margin-top: 1rem;
+    width: 20rem;
+    background-color:var(--secondary-color);
+    border-radius: 7px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.2);
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github REST API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="searchContainer">
+        <div class="search" id="search">
+            <h3>Search GITHUB Username</h3>
+            <p>and can access user repos and datas</p>
+
+            <form action="" id="githubForm">
+                <input type="text" id="username" placeholder="username">
+                <br>
+                <button type="submit" id="btn" class="btn">Find</button>
+            </form>
+
+            <!-- <div class="alert" id="success">
+                This is an alert box.
+            </div> -->
+        </div>
+
+        <br>
+
+        <div class="profile" id="profile">
+            <!-- <div id="gitUser">
+                <div class="user-img">
+                    <img src="https://avatars.githubusercontent.com/u/8957173?v=4" alt="">
+                </div>
+                <div class="user-infos">
+                    <div class="user-items">
+                        <div id="followers">
+                            Followers
+                        </div>
+                        <div id="followed">
+                            Followed
+                        </div>
+                        <div id="user-repos">
+                            Repos
+                        </div>
+                    </div>
+    
+                    <ul id="user-contacts">
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                            Deneme
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-pin"></i>
+                            Baku
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            example@example.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div id="user-name">
+                Someone
+            </div>
+            <hr>
+            <div id="user-desc">
+                Anything
+            </div> -->
+        </div>
+        <h3>Last Repos</h3>
+        <div id="repos">
+            <div class="repo-info">
+                <!-- <div class="repo-name">
+                    <a href="" target="_blank">Repo Name</a>
+                </div>
+    
+                <div class="repo-items">
+                    <div class="language">
+                        JavaScript
+                    </div>
+        
+                    <div class="stars">
+                       10 Stars
+                    </div>
+        
+                    <div class="forks">
+                        7 forks
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <br>
+
+        <h3>Recent Searches</h3>
+
+        <div id="recentSearches">
+            <ul class="list-groups" id="recent-users">
+                <!-- <li class="list-group-item">Anything</li> -->
+            </ul>
+            <br>
+            <button id="clear-recents" class="btn">Clear All</button>
+        </div>
+    </div>
+    <script src="storage.js"></script>
+    <script src="ui.js"></script>
+    <script src="github.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
